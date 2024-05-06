@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="midterm.css">
+    <title>Bayan Grow</title>
+</head>
+
+<body>
+
+
+    <!-- Header -->
+    <header>
+        <a href="index.html" class="logo">NU Builder <span>.</span> </a>
+        <div class="menuToggle" onclick="toggleMenu()">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#expert" onclick="toggleMenu()">Features</a></li>
+            <li><a href="#testimonials" onclick="toggleMenu()">Testimonials</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- Banner -->
+
+    <section class="banner" id="banner">
+        <div class="content">
+            <h2>Bayan Grow</h2>
+            <p>"From Detection to Protection: RiceSmart, Your Farming Partner."</p>
+    
+        </div>
+    </section>
+
+    <!-- About Us -->
+
+    
+<section class="about" id="about">
+        <div class="row">z
+            <div class="col50">
+                <h2 class="titletext"><span>A</span>bout Us</h2>
+                <p>Our business is dedicated to creating a transformative experience for farmers and direct buyers. We focus on establishing a direct connection between those who cultivate the land and those who appreciate the value of fresh produce. By eliminating intermediaries, our aim is to ensure that farmers can sell their crops without any middleman interference, allowing them to reap the full benefits of their hard work.
+   <br><br>
+<h2 class="titletext"><span>F</span>armer</h2>
+
+<p>-Small-scale and large-scale farmers seeking a transparent and equitable platform to showcase and sell their produce.
+<p>-Farmers looking to maximize their profits by bypassing traditional middlemen and establishing a direct connection with buyers.
+<p>-Those interested in leveraging technology to broaden their market reach and streamline the sales process.
+   <br><br>
+   <h2 class="titletext"><span>B</span>uyer</h2>
+   
+<p>-Businesses, retailers, and individuals interested in sourcing fresh produce directly from farmers.
+<p>-Buyers who value transparency in the supply chain and want to establish a direct relationship with the agricultural producers.
+<p>-Organizations committed to supporting local farmers and promoting sustainable agriculture practices.
+ 
+                </p>
+            </div>
+            <div class="col50">
+                <div class="imgbox">
+                    <img src="Images/logo.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+   
+
+    <!-- Contact -->
+
+    <section class="contact" id="contact">
+        <div class="title white">
+            <h2 class="titletext"><span>C</span>ontact Us </h2>
+            <p>We're always here to assist. Reach out anytime.
+            </p>
+        </div>
+
+        <div class="contactform">
+            <h3>Send Message</h3>
+            <div class="inputbox">
+                <input type="text" placeholder="Name">
+            </div>
+            <div class="inputbox">
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="inputbox">
+                <textarea rows="8" placeholder="Enter Your Message" cols="30"></textarea>
+            </div>
+            <div class="inputbox">
+                <input type="submit" value="Send">
+            </div>
+        </div>
+    </section>
+
+    <!-- copyrighttext -->
+
+    <div class="copyrighttext">
+        <p>Copyright &copy;Bayan Grow | All Rights Reserved</p>
+    </div>
+
+
+    <!-- <div class="developmentspace"></div> -->
+    <script type="text/javascript">
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 80)
+        })
+
+        function toggleMenu() {
+            const navlinks = document.querySelector('.nav-links')
+            const menuToggle = document.querySelector('.menuToggle');
+            menuToggle.classList.toggle('active');
+            navlinks.classList.toggle('active');
+        }
+
+    </script>
+
+</body>
+
+</html>
